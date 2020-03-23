@@ -4,14 +4,9 @@ body {
   background-color: white;
   color: white;
   font-family: 'Anton', sans-serif;
-/*  border: solid green;
-  margin-top: left;*/
 }
 
-/*section {
-	margin-left: 20px;
-	color: black;
-}
+/*
 
 font-family: 'Open Sans Condensed', sans-serif;
 font-family: 'Quicksand', sans-serif;
@@ -24,8 +19,14 @@ font-family: 'Julius Sans One', sans-serif;
 font-family: 'Bad Script', cursive;
 font-family: 'Forum', cursive;
 
+*/
 
-*/header {
+
+body {
+	margin-top: 150px;
+}
+
+header {
 	position: fixed;
 	top: 0;
 	margin-top: 0;
@@ -34,14 +35,11 @@ font-family: 'Forum', cursive;
 }
 
 h2 {
-/*	font-weight: normal;*/
-/*font-family: 'Sacramento', cursive;*/
-/*font-family: 'Josefin Slab', serif;*/
-/*font-family: 'Julius Sans One', sans-serif;*/
-/*font-family: 'Forum', cursive;*/
 	font-family: 'Cormorant Garamond', serif;
-/*	font-family: 'Libre Baskerville', serif;*/
-	/*font-family: 'Shadows Into Light', cursive;*/
+}
+
+a {
+	text-decoration: none;
 }
 
 #products {
@@ -50,15 +48,16 @@ h2 {
 
 #what-we-do p{
 	font-size: 20px;
-/*	font-family: 'Cormorant Garamond', serif;*/
+	text-align: left;
 	font-family: 'Josefin Slab', serif;
 }
 
 #navbar {
 	display: grid;
-	grid-template-columns: 30% 70%;
+	grid-template-columns: 30% 50% 20%;
 	background-color: #A44E78;
 	font-size: 25px;
+/*	border: solid;*/
 }
 
 #title {
@@ -74,19 +73,46 @@ h2 {
 	position: absolute;
 	top: 50%;
 	z-index: 2;
-	height: 33px;
+	/*height: 33px;*/
+	max-height: 33px;
 	overflow: hidden;
-	transition: height 1s ease-in-out;
+	transition: max-height 1s ease-in-out;
 	font-family: 'Cormorant Garamond', serif;
 }
 
 .dropdown:hover {
+<<<<<<< HEAD
 	/* height: 100%; */
   height: 5px;
+=======
+	max-height: 160px;
+/*	height: 100%;*/
+	/*color: black;*/
+>>>>>>> f22e743c493f1867125f5342df4db172679dd651
 }
 
 .dropbtn {
+/*	display: flex;
+	align-items: center;
+	justify-content: center;*/
+	text-align: center;
 	padding-bottom: 10px;
+	cursor: pointer;
+}
+
+#c-order {
+	border: solid #9B0D6B 1.5px;
+	background-color: #9B0D6B;
+	margin: 10px;
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	max-height: 33px;
+	overflow: hidden;
+	font-family: 'Cormorant Garamond', serif;
+	margin-left: 11%;
+	cursor: pointer;
 }
 
 a {
@@ -95,28 +121,62 @@ a {
 	display: block;
 }
 
-.about {
-	margin-left: 11%;
+.shop-cart {
+/*	border: solid;*/
+	color: white;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	margin: 10px;
+	/*margin-right: 20px;*/
+/*	float: left;*/
 }
 
-.dropctn {
-/*	display: inline-block;*/
+.shop-cart div {
+/*	border: solid black;*/
+	color: black;
+	position: absolute;
+	z-index: 1;
+	right: 2.2%;
+	top: 60%;
+	color: #9B0D6B;
+/*	font-family: 'Josefin Slab', serif;*/
+/*	font-family: 'Cormorant Garamond', serif;*/
+	font-size: 17px;
+/*	left: 0;*/
 }
+
+.shop-cart p {
+/*	border: solid;*/
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 17px;
+	margin-bottom: 0;
+	cursor: pointer;
+}
+
+.shop-cart p:hover {
+/*	border: solid;*/
+	text-decoration: underline;
+}
+
+.about {
+/*	margin-left: 11%;*/
+	margin-left: 25.75%;
+}
+
 
 #what-we-do {
-/*	border: solid;*/
 	color: black;
-	margin: 150px 20px 0px 20px;
+/*	150px*/
+	margin: 0px 20px 0px 20px;
 }
 
 #products {
 	color: black;
-/*	border: solid;
-*/	margin: 0px 20px 20px 20px;
+	margin: 0px 20px 20px 20px;
 }
 
 .image-display {
-/*	border: solid;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -130,10 +190,11 @@ a {
 	transition: opacity 0.5s ease-in-out;
 }
 
-.image-display img:hover{
-	opacity: 0.7;
+.image-display .img:hover{
+	opacity: 0.8;
 }
 
+<<<<<<< HEAD
 
 
 /*.home, .about, .dropdown {
@@ -160,16 +221,12 @@ a {
 */
 
 #options {
+=======
+#options {	
+>>>>>>> f22e743c493f1867125f5342df4db172679dd651
 	display: flex;
-/*	border: solid;*/
 	justify-content: flex-start;
-/*	justify-content: flex-start;*/
-/*	align-items: flex-end;*/
 	font-family: 'Quicksand', sans-serif;
-/*	font-family: 'Libre Baskerville', serif;*/
-/*	font-family: 'Forum', cursive;*/
-	/*font-family: 'Bad Script', cursive;*/
-/*	font-family: 'Amatic SC', cursive;*/
 }
 
 .plus {
@@ -177,7 +234,6 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-/*	border: solid;*/
 	width: 200px;
 	height: 200px;
 	margin: 10px;
@@ -190,45 +246,84 @@ a {
 .plus:hover {
 	background-color: #f2f2f2;
 }
-/*
-.dropctn a {
-    float: none;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
 
-a {
-	text-decoration: none;
-	color: white;
-}
-
-.dropdown:hover .dropctn {
-	display: block;
-	opacity: 1;
-}*/
-
-/*#options p {
-	font-family: 'Amatic SC', cursive;
-	padding: 10px;
-	background-color: purple;
-	color: white;
-	margin-left: 20px;
-	transition: height 1s;
-	position: absolute;
-	top: 20px;
-	height: 35px;
+.modal {
+	display: none;
+	position: fixed;
 	z-index: 1;
-	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4)
+/*	border: solid 20px black;*/
+/*	overflow: auto;*/
 }
 
+.modal-content h2,p {
+	text-align: center;
+}
 
-#options p:hover {
-	height: 130px;
-}*/
+.modal-content {
+	background-color: white;
+	color: #A44E78;
+	border: 3px solid #A44E78;
+	margin: 13% auto;
+	padding: 0;
+	width: 80%;
+}
+.modal-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	/*border: solid;*/
+}
 
+.modal-middle {
+/*	text-align: left;*/
+	margin: 5px 30px 5px 30px;
+}
+
+.modal-header h2 {
+/*	border: solid;*/
+/*	text-align: center;*/
+/*	margin-top: 0px;
+	padding-top: 5px;*/
+}
+
+.add-to-cart {
+	border: solid #A44E78;
+	padding: 10px;
+	color: white;
+	background-color: #A44E78;
+}
+
+<<<<<<< HEAD
 /* h2 {
 	margin-top: 150px;
 } */
+=======
+.add-to-cart:hover {
+	/*border: solid #A44E78;
+	background-color: white;
+	color: #A44E78;*/
+	cursor: pointer;
+}
+
+
+.close-btn {
+	float: right;
+	color: #A44E78;
+	font-size: 25px;
+	transition: 0.4s;
+/*	position: relative;*/
+	padding: 0px 10px;
+	margin: 0;
+/*	border: solid;*/
+}
+
+.close-btn:hover {
+	cursor: pointer;
+}
+>>>>>>> f22e743c493f1867125f5342df4db172679dd651
